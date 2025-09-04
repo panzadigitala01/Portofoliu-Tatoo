@@ -1,0 +1,106 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .gallery-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .gallery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img {
+            transition: transform 0.5s ease-in-out;
+        }
+        .image-container:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md py-6">
+        <div class="container mx-auto px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-center text-gray-900 tracking-tight">The Gallery</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 lg:px-8 py-12">
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Gallery Card 1 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=1" alt="Art Piece 1" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Gallery Card 2 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=2" alt="Art Piece 2" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Gallery Card 3 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=3" alt="Art Piece 3" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Gallery Card 4 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=4" alt="Art Piece 4" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Gallery Card 5 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=5" alt="Art Piece 5" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Gallery Card 6 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=6" alt="Art Piece 6" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Gallery Card 7 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=7" alt="Art Piece 7" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Gallery Card 8 -->
+            <div class="gallery-card bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="image-container w-full h-64 overflow-hidden">
+                    <img src="https://picsum.photos/600/400?random=8" alt="Art Piece 8" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/555555/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-inner mt-12 py-6">
+        <div class="container mx-auto text-center text-gray-600 px-6 lg:px-8">
+            <p>&copy; 2024 The Art Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
